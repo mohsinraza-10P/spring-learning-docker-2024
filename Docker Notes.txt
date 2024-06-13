@@ -41,7 +41,8 @@ Setup Docker for Spring Boot App:
 
 1- Create docker image of app:
 mvn spring-boot:build-image -DskipTests
-Successfully built image 'docker.io/mohsin/ms-springboot-currency-exchange-service:0.0.1-SNAPSHOT'
+mohsin/ms-springboot-currency-exchange-service:0.0.1-SNAPSHOT
+mohsin/ms-springboot-naming-server:0.0.1-SNAPSHOT
 
 2- Launch docker container (Command / Compose File)
 docker run -p 8000:8000 mohsin/ms-springboot-currency-exchange-service:0.0.1-SNAPSHOT
