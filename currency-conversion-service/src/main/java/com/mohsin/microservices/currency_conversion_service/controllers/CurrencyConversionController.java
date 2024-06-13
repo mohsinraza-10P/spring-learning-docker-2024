@@ -53,7 +53,9 @@ public class CurrencyConversionController {
         uriVariables.put("toCurrency", toCurrency);
 
         var response = restTemplate.getForEntity(
-                "http://localhost:8000/currency-exchange/from/{fromCurrency}/to/{toCurrency}",
+                "http://currency-exchange-service:8000/currency-exchange/from/{fromCurrency}/to/{toCurrency}",
+                //"http://localhost:8000/currency-exchange/from/{fromCurrency}/to/{toCurrency}",
+                //"http://host.docker.internal:8000/currency-exchange/from/{fromCurrency}/to/{toCurrency}",
                 CurrencyConversion.class,
                 uriVariables
         );
