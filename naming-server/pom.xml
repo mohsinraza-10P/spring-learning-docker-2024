@@ -62,7 +62,7 @@
 							<BP_JVM_VERSION>${java.version}</BP_JVM_VERSION>
 						</env>
 						<!-- mvn spring-boot:build-image -->
-						<!-- mohsin/ms-springboot-currency-exchange-service:0.0.1-SNAPSHOT -->
+						<!-- mohsin/ms-springboot-naming-server:0.0.1-SNAPSHOT -->
 						<name>docker.io/mohsin/ms-springboot-${project.artifactId}:${project.version}</name>
 					</image>
 					<pullPolicy>IF_NOT_PRESENT</pullPolicy>
