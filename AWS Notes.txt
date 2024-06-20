@@ -1,0 +1,18 @@
+How to connect EC2 Instance via SSH client:
+https://hkcodeblogs.medium.com/aws-ec2-create-and-connect-to-instance-via-ssh-354a0c1909f
+
+Troubleshoot EC2 Instance connectivity issue via SSH:
+https://www.youtube.com/watch?v=P-jJU_G5EBc
+
+Connect via SSH:
+ssh -i "ec2-keypair.pem" ec2-user@ec2-52-201-253-21.compute-1.amazonaws.com
+
+Commands:
+sudo su // To install anything, we need to become super-user
+yum update -y // Yum is a package manager in AWS
+yum install httpd // Install apache web server
+systemctl start httpd // Start apache web server
+systemctl enable httpd //
+
+Once the web server is started, you can access it via public ip address:
+http://52.201.253.21/
